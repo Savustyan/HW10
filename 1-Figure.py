@@ -3,6 +3,8 @@
 методами подсчета площади и периметра. Методы должны возвращать (return) значение, а не принтить (это важно)
 """
 
+from math import sqrt
+
 
 class Figure:
 
@@ -35,7 +37,7 @@ class Triangle(Figure):
 
     def cal_area(self):
         per = self.cal_perimetr() / 2
-        return (per * (per - self.side_a) * (per - self.side_b) * (per - self.side_c)) ** 0.5
+        return sqrt(per * (per - self.side_a) * (per - self.side_b) * (per - self.side_c))
 
 
 class Rectangle(Figure):

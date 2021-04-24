@@ -14,7 +14,7 @@ class Person:
     def __init__(self, age, name, _id):
         self.name = name
         self.age = age
-        self._id = _id  # присвоение id для случая, если имена и возраст одинаковы
+        self._id = _id
         self.__friends = {}  # словарь друзей объекта
 
     def know(self, other):
